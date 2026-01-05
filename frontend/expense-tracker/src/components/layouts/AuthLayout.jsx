@@ -1,5 +1,5 @@
 import React from 'react'
-
+import CARD_2 from '../../assets/images/CARD_2.jfif'
 const AuthLayout = ({children}) => {
   return (
     <div>
@@ -8,9 +8,18 @@ const AuthLayout = ({children}) => {
         {children}
       </div>
       
+      <div className='block md:block w-[40vw] h-screen bg-violet-50 bg-auth-bg-img bg-cover bg-no-repeat bg-center overflow-hidden p-8 relative'>
+        <div className='w-48 h-48 rounded-[40px] bg-purple-600 absolute -top-7 -left-5'></div>
+        <div className='w-48 h-56 rounded-[40px] border-[20px] border-fuchsia-600 absolute top-[30%] -right-10'></div>
+        <div className='w-48 h-48 rounded-[40px] bg-violet-500 absolute -bottom-7 -left-5'></div>
+
+        <img 
+        src={CARD_2} alt="auth image" 
+        className='w-64 lg:w-[90%] absolute bottom-10 shadow-lg shadow-blue-400/15'
+        />
+      </div>
     </div>
   )
 }
 
 export default AuthLayout
- 
